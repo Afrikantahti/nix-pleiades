@@ -2,7 +2,7 @@
   home = {
     packages = [ pkgs.factorio ];
     persistence = {
-      "/persist/home/misterio" = {
+      "/persist/home/da" = {
         allowOther = true;
         directories = [ ".factorio" ];
       };

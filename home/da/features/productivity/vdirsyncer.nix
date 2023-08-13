@@ -6,7 +6,7 @@ in
   home.packages = with pkgs; [ vdirsyncer ];
 
   home.persistence = {
-    "/persist/home/misterio".directories =
+    "/persist/home/da".directories =
       [ "Calendars" "Contacts" ".local/share/vdirsyncer" ];
   };
 

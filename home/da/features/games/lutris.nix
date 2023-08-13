@@ -2,7 +2,7 @@
   home.packages = [ pkgs.lutris ];
 
   home.persistence = {
-    "/persist/home/misterio" = {
+    "/persist/home/da" = {
       allowOther = true;
       directories = [
         {

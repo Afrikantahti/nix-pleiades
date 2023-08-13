@@ -16,7 +16,7 @@ in {
   home.packages = [ runescape ];
 
   home.persistence = {
-    "/persist/home/misterio" = {
+    "/persist/home/da" = {
       allowOther = true;
       directories = [
         "Jagex"

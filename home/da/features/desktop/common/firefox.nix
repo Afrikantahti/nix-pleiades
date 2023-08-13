@@ -7,7 +7,7 @@ in
   programs.browserpass.enable = true;
   programs.firefox = {
     enable = true;
-    profiles.misterio = {
+    profiles.da = {
       bookmarks = { };
       extensions = with addons; [
         ublock-origin
@@ -34,7 +34,7 @@ in
   home = {
     persistence = {
       # Not persisting is safer
-      # "/persist/home/misterio".directories = [ ".mozilla/firefox" ];
+      # "/persist/home/da".directories = [ ".mozilla/firefox" ];
     };
   };
 

@@ -3,7 +3,7 @@ let ifTheyExist = groups: builtins.filter (group: builtins.hasAttr group config.
 in
 {
   users.mutableUsers = false;
-  users.users.misterio = {
+  users.users.da = {
     isNormalUser = true;
     shell = pkgs.fish;
     extraGroups = [
@@ -23,17 +23,17 @@ in
       "deluge"
     ];
 
-    openssh.authorizedKeys.keys = [ (builtins.readFile ../../../../home/misterio/ssh.pub) ];
-    passwordFile = config.sops.secrets.misterio-password.path;
+    openssh.authorizedKeys.keys = [ (builtins.readFile ../../../../home/da/ssh.pub) ];
+    #passwordFile = config.sops.secrets.da-password.path;
     packages = [ pkgs.home-manager ];
   };
 
-  sops.secrets.misterio-password = {
-    sopsFile = ../../secrets.yaml;
-    neededForUsers = true;
-  };
+  # sops.secrets.da-password = {
+  #   sopsFile = ../../secrets.yaml;
+  #   neededForUsers = true;
+  # };
 
-  home-manager.users.misterio = import ../../../../home/misterio/${config.networking.hostName}.nix;
+  home-manager.users.da = import ../../../../home/da/${config.networking.hostName}.nix;
 
   services.geoclue2.enable = true;
   security.pam.services = { swaylock = { }; };

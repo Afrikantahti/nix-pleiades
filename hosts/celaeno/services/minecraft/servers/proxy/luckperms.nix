@@ -40,14 +40,14 @@
           };
         };
         users = {
-          "3fc76c64-b1b2-4a95-b3cf-0d7d94db2d75" = {
-            username = "misterio7x";
+          "3fc76c64-b1b2-4a95-b3cf-" = {
+            username = "da";
             nodes = mkPermissions {
               "group.owner" = true;
             };
           };
-          "10ffa557-322a-4b6c-9b3e-cdc2792163ae" = {
-            username = "kirao";
+          "10ffa557-322a-4b6c-9b3e-" = {
+            username = "da";
             nodes = mkPermissions {
               "group.admin" = true;
             };

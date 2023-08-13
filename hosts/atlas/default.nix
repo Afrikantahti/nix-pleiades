@@ -7,7 +7,7 @@
     ./hardware-configuration.nix
 
     ../common/global
-    ../common/users/misterio
+    ../common/users/da
 
     ../common/optional/gamemode.nix
     ../common/optional/ckb-next.nix

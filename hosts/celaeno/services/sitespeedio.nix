@@ -25,7 +25,7 @@
         }
         {
           inherit settings;
-          urls = ["https://paste.misterio.me" "https://paste.misterio.me/u/misterio"];
+          urls = ["https://paste.da.me" "https://paste.da.me/u/da"];
         }
       ];
     };

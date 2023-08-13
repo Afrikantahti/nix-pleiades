@@ -4,7 +4,7 @@ let inherit (config.colorscheme) colors kind;
 in
 {
   home.persistence = {
-    "/persist/home/misterio".directories = [
+    "/persist/home/da".directories = [
       ".config/qutebrowser/bookmarks"
       ".config/qutebrowser/greasemonkey"
       ".local/share/qutebrowser"

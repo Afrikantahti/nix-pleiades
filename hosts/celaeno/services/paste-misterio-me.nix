@@ -1,26 +1,26 @@
 { config, inputs, pkgs, ... }: {
   imports = [
-    inputs.paste-misterio-me.nixosModules.server
+    inputs.paste-da-me.nixosModules.server
   ];
 
   services = {
-    paste-misterio-me = {
+    paste-da-me = {
       enable = true;
-      package = inputs.paste-misterio-me.packages.${pkgs.system}.server;
+      package = inputs.paste-da-me.packages.${pkgs.system}.server;
       database.createLocally = true;
-      environmentFile = config.sops.secrets.paste-misterio-me-secrets.path;
+      environmentFile = config.sops.secrets.paste-da-me-secrets.path;
       port = 8082;
     };
 
-    nginx.virtualHosts."paste.misterio.me" = {
+    nginx.virtualHosts."paste.da.me" = {
       forceSSL = true;
       enableACME = true;
       locations."/".proxyPass =
-        "http://localhost:${toString config.services.paste-misterio-me.port}";
+        "http://localhost:${toString config.services.paste-da-me.port}";
     };
   };
 
-  sops.secrets.paste-misterio-me-secrets = {
+  sops.secrets.paste-da-me-secrets = {
     owner = "paste";
     group = "paste";
     sopsFile = ../secrets.yaml;

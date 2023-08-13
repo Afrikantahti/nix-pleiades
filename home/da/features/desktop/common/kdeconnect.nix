@@ -41,6 +41,6 @@ in
   };
 
   home.persistence = {
-    "/persist/home/misterio".directories = [ ".config/kdeconnect" ];
+    "/persist/home/da".directories = [ ".config/kdeconnect" ];
   };
 }

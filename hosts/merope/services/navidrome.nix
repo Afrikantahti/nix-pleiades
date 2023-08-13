@@ -18,7 +18,7 @@
         locations."/".proxyPass =
           "http://localhost:${toString config.services.navidrome.settings.Port}";
       };
-      "music.misterio.me" = {
+      "music.da.me" = {
         forceSSL = true;
         enableACME = true;
         locations."/".return = "302 https://music.m7.rs$request_uri";

@@ -12,6 +12,6 @@
   };
 
   home.persistence = {
-    "/persist/home/misterio".directories = [ ".password-store" ];
+    "/persist/home/da".directories = [ ".password-store" ];
   };
 }

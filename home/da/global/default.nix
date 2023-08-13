@@ -39,13 +39,13 @@ in
   };
 
   home = {
-    username = lib.mkDefault "misterio";
+    username = lib.mkDefault "da";
     homeDirectory = lib.mkDefault "/home/${config.home.username}";
     stateVersion = lib.mkDefault "22.05";
     sessionPath = [ "$HOME/.local/bin" ];
 
     persistence = {
-      "/persist/home/misterio" = {
+      "/persist/home/da" = {
         directories = [
           "Documents"
           "Downloads"

@@ -19,7 +19,7 @@
     files = {
       "ops.json".value = [{
         uuid = "3fc76c64-b1b2-4a95-b3cf-0d7d94db2d75";
-        name = "Misterio7x";
+        name = "da";
         level = 4;
       }];
       "config/paper-global.yml".value = {
